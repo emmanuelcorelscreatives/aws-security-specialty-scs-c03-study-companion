@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SCS-C03 Study Guide</title><style>body{font:17px/1.6 system-ui,sans-serif;max-width:850px;margin:2rem auto;padding:0 1rem;color:#152536}h1,h2{line-height:1.25}h2{margin-top:2rem}a{color:#07589e}@media print{body{font-size:11pt;max-width:none}h2{break-after:avoid}}</style></head><body><main><h1>AWS Security Specialty SCS-C03 — Study Guide</h1>
+<p>Use this guide alongside your practice tests to improve decisions, not memorize answers.</p>
+<h2>Your practice course</h2>
+<p>The course has six practice tests, each with 65 single-answer questions. Each test has a 170-minute time limit and an 80% practice benchmark. On a 65-question test, 52 correct answers reaches that benchmark.</p>
+<p>These settings help you structure practice. They are not the AWS exam scoring model, a prediction of an exam result, or a guarantee of readiness. The official exam may use question formats beyond the single-answer format used in this course.</p>
+<p>This is independent practice material, not an official AWS exam guide or a collection of actual or recalled exam questions.</p>
+<h2>A useful study cycle</h2>
+<p>Attempt one test without notes. Use the test timer, and flag uncertain answers so you can distinguish sound reasoning from guesses.</p>
+<p>After submitting, review all the explanations for missed or uncertain items. Name the deciding requirement: the principal, action, resource, policy layer, network path, timing, or evidence limit.</p>
+<p>Use the review worksheet to record the misconception in your own words. Do not copy entire questions or answer choices into shared notes.</p>
+<p>Read the relevant official AWS documentation using the reference index. Explain why an attractive alternative would solve a different problem.</p>
+<p>Revisit weak topics before attempting another test. Some security mechanisms recur across forms; remembered answer wording is not a substitute for applying the current scenario constraints.</p>
+<h2>1. Detection</h2>
+<p>Separate collection from analysis and alerting. Establish which events are available before selecting an alarm or response workflow.</p>
+<p>CloudTrail management activity and object-level data activity are different collection categories. Enabling collection now does not reconstruct events that were never recorded.</p>
+<p>Treat log integrity and log completeness as separate questions. A digest-validation result concerns delivered evidence, not whether every required event category was selected.</p>
+<p>Trace a failed alert from ingestion through filters, metric generation, alarm evaluation, routing, destination permissions, and execution.</p>
+<p>Flow logs describe network metadata, not full application content. Check interface scope, traffic filters, collection status, and delivery timing before drawing conclusions.</p>
+<p>A central findings view supports triage. It does not remove the need to examine the producing service and confirm the affected account, Region, resource, and time window.</p>
+<h2>2. Incident response</h2>
+<p>Prepare response owners, escalation routes, emergency access, and workload-specific procedures before an incident.</p>
+<p>Choose an exercise that matches the objective and safety boundary. A discussion-based rehearsal and a live tooling exercise establish different kinds of readiness.</p>
+<p>Distinguish stopping an exposed long-term key, stopping future role assumption, and containing previously issued sessions.</p>
+<p>Coordinate containment and evidence preservation. Verify the actual effect of a response action rather than relying only on a ticket update.</p>
+<p>Eradication addresses causes and persistence. Recovery requires trustworthy business operation, monitoring for recurrence, and an accountable operational handoff.</p>
+<h2>3. Infrastructure security</h2>
+<p>Match edge controls to the threat. Request filtering, DDoS protection, user authentication, and origin access restriction solve different problems.</p>
+<p>Evaluate WAF changes against legitimate traffic before approved enforcement. Rate-based protection is not an exact business transaction ledger.</p>
+<p>Follow the complete network path. A firewall cannot inspect traffic that never traverses its endpoint; a stateful design also needs a coherent return path.</p>
+<p>Security groups and network ACLs have different state and rule semantics. Identify the control layer before deciding which direction or return ports need explicit rules.</p>
+<p>Use secure administrative access, workload roles, hardened metadata access, patching, and vulnerability assessment together. Verify service prerequisites instead of introducing an unnecessary public administration path.</p>
+<h2>4. Identity and access management</h2>
+<p>Authentication establishes identity; authorization determines which request is permitted. Stronger authentication does not correct excessive authorization.</p>
+<p>Trace the actual principal and request context. Identity policies, resource policies, boundaries, session policies, and organization policies do not all behave identically.</p>
+<p>A permissions boundary limits an identity-policy grant; it does not independently supply that grant. Check explicit denies and the principal type before generalizing a policy result.</p>
+<p>For federation, check issuer, audience, subject, role trust, token validity, and the permissions of the resulting session.</p>
+<p>Separate successful workforce sign-in from account assignment and the permission set applied to the account. Review least privilege and update propagation as well as authentication.</p>
+<h2>5. Data protection</h2>
+<p>Follow both the data path and the key authorization path. Access to a storage resource does not automatically grant use of its encryption key.</p>
+<p>Key rotation, secret rotation, ciphertext migration, and access revocation are different operations. Identify which one the requirement actually calls for.</p>
+<p>Preserve cryptographic dependencies for retained data. Immutable storage cannot recover destroyed key material.</p>
+<p>Object retention concerns particular versions. Distinguish fixed retention, legal holds, permitted extensions, and attempts to shorten a protected period.</p>
+<p>Check both sides of a transport connection. Front-end TLS does not by itself establish encryption on the backend connection.</p>
+<p>Data discovery identifies content and coverage limits. Sensitive content, exposure risk, and confirmed unauthorized transfer are different conclusions.</p>
+<h2>6. Security foundations and governance</h2>
+<p>Use account structure, organizational controls, and delegated administration to establish clear management boundaries.</p>
+<p>Treat deployment scope, operation status, and per-resource results as separate evidence. A successful high-level operation does not always mean every target is in the intended state.</p>
+<p>Connect infrastructure policy checks to the release decision, and use live-resource evaluation for changes outside that deployment path.</p>
+<p>Configuration aggregation is a central view, not automatic rule deployment or remediation.</p>
+<p>Provider compliance documents, customer configuration evidence, and an auditor&#x27;s compliance judgment serve different purposes. Check report scope, evidence relevance, and accountable review.</p>
+<h2>Use the benchmark wisely</h2>
+<p>Aim to explain the deciding constraint without looking at the choices. Review correct answers reached by guessing as carefully as incorrect answers.</p>
+<p>An 80% practice result is a useful course milestone, not an official certification decision. Combine consistent reasoning with study of the official objectives and hands-on experience where appropriate.</p>
+<p>AWS services evolve. Follow the current official documentation when it differs from older notes, and tell the instructor which course item may need review.</p>
+<h2>Companion resources</h2>
+<ul><li><a href="REFERENCE-INDEX.md">Official reference index</a></li>
+<li><a href="REVIEW-WORKSHEET.csv">Review worksheet</a></li><li><a href="STUDY-GUIDE.md">Markdown study guide</a></li></ul></main></body></html>
